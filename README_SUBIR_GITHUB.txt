@@ -1,28 +1,30 @@
-Punto Smart OS - Web institucional SEO v1
+PUNTO SMART OS - WEB INSTITUCIONAL v4 ANTIFALLA
 
-Estructura:
-- /index.html: landing institucional optimizada para SEO.
-- /free/: versión Free v101.
-- /plus/: versión Plus v101.
-- /como-usarlo/: Quickstart.
-- /para-comercios/: página SEO para comercios/oficinas.
-- /privacidad/: privacidad y datos.
-- /robots.txt y /sitemap.xml listos para Search Console.
-- /CNAME apunta a puntosmart.com.ar.
+Esta versión corrige el problema de verse sin diseño cuando no carga styles.css o favicon.png.
 
-Para subir:
-1. Subir todo el contenido de esta carpeta a la raíz del repositorio que usa GitHub Pages.
-2. En GitHub Pages configurar Custom domain: puntosmart.com.ar.
-3. En DNS del dominio raíz usar los A records de GitHub Pages:
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-4. Activar Enforce HTTPS cuando GitHub lo permita.
-5. Enviar sitemap.xml en Google Search Console.
+Cambios:
+- CSS crítico insertado dentro de las páginas institucionales.
+- Rutas relativas para que funcione mejor en GitHub Pages y dominio propio.
+- Logo del header dibujado con CSS, no depende de que cargue la imagen.
+- Se conserva styles.css, sitemap.xml, robots.txt, CNAME, free/ y plus/.
 
+IMPORTANTE PARA SUBIR A GITHUB:
+1) Descomprimir este ZIP.
+2) Entrar a la carpeta descomprimida.
+3) Subir TODO el contenido a la raíz del repositorio, no la carpeta contenedora.
 
-V2 texto principal:
-Punto Smart OS
-Sistema operativo rápido, versátil y portátil.
-Tu entorno digital siempre disponible, desde cualquier navegador compatible, sin instalar nada.
+En la raíz del repo tienen que quedar:
+- index.html
+- styles.css
+- favicon.png
+- favicon.svg
+- robots.txt
+- sitemap.xml
+- CNAME
+- carpeta free
+- carpeta plus
+- carpeta como-usarlo
+- carpeta para-comercios
+- carpeta privacidad
+
+Si se sube solo index.html, se puede ver sin diseño o romper links internos.
