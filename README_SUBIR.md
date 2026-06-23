@@ -1,10 +1,12 @@
-# Punto Smart OS - versión institucional completa v7
+# Punto Smart OS institucional v10 FULL
 
-Subí TODO el contenido de esta carpeta a la raíz del repo de GitHub Pages.
+Versión completa para subir a la raíz del repo.
 
-Cambios v7:
-- se eliminó la preview grande del hero
-- se eliminó "Lo que no es"
-- se agregó bloque de situaciones críticas
-- se redujeron espacios y padding entre textos y bloques
-- se simplificaron las etiquetas SEO visibles
+Cambios v10:
+- El menú mantiene navegación rápida en home para Qué es, Cuándo sirve más y Beneficios.
+- Quickstart ahora enlaza a /como-usarlo/ para SEO.
+- Comercios ahora enlaza a /para-comercios/ para SEO.
+- Privacidad ahora enlaza a /privacidad/ para SEO.
+- Se agregaron enlaces internos visibles desde las secciones resumidas del home hacia sus páginas reales.
+
+Subí el CONTENIDO de esta carpeta a la raíz del repo, no la carpeta contenedora.
