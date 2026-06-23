@@ -1,10 +1,18 @@
-# Punto Smart OS - versión institucional completa v7
+# Punto Smart OS institucional v9 FULL
 
-Subí TODO el contenido de esta carpeta a la raíz del repo de GitHub Pages.
+Versión completa para subir a la raíz del repo.
 
-Cambios v7:
-- se eliminó la preview grande del hero
-- se eliminó "Lo que no es"
-- se agregó bloque de situaciones críticas
-- se redujeron espacios y padding entre textos y bloques
-- se simplificaron las etiquetas SEO visibles
+Incluye:
+- home institucional v9
+- styles.css v9
+- favicon
+- free/
+- plus/
+- como-usarlo/
+- para-comercios/
+- privacidad/
+- robots.txt
+- sitemap.xml
+- CNAME
+
+Subí el CONTENIDO de esta carpeta a la raíz del repo, no la carpeta completa.
