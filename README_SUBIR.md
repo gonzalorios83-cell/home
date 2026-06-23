@@ -1,12 +1,12 @@
-# Punto Smart OS institucional v11 FULL
+# Punto Smart OS institucional v12 ANTICACHE
 
-Cambios v11:
-- Se eliminó la palabra "compatible" de los textos visibles.
-- Menú completo visible también con zoom alto.
-- En pantallas angostas/zoom alto el menú pasa a dos líneas y/o scroll horizontal, no desaparece.
-- Se unificó el menú en home y páginas internas:
-  Qué es, Cuándo sirve más, Beneficios, Quickstart, Comercios, Privacidad, Abrir Free.
-- Se mantuvieron páginas reales SEO:
-  /como-usarlo/, /para-comercios/, /privacidad/, /free/, /plus/.
+Cambios:
+- Se eliminó "compatible" de todos los textos.
+- El CSS de la home está también inline para evitar caché del navegador/GitHub Pages.
+- Menú siempre visible con zoom alto; si no entra, pasa a scroll horizontal.
+- Se conserva estructura SEO completa.
 
-Subí el CONTENIDO de esta carpeta a la raíz del repo, no la carpeta contenedora.
+Después de subir:
+1. Esperar 1 minuto.
+2. Abrir con Ctrl + F5.
+3. O probar con ?v=12 al final de la URL.
