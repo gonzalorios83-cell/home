@@ -1,12 +1,12 @@
-# Punto Smart OS institucional v10 FULL
+# Punto Smart OS institucional v11 FULL
 
-Versión completa para subir a la raíz del repo.
-
-Cambios v10:
-- El menú mantiene navegación rápida en home para Qué es, Cuándo sirve más y Beneficios.
-- Quickstart ahora enlaza a /como-usarlo/ para SEO.
-- Comercios ahora enlaza a /para-comercios/ para SEO.
-- Privacidad ahora enlaza a /privacidad/ para SEO.
-- Se agregaron enlaces internos visibles desde las secciones resumidas del home hacia sus páginas reales.
+Cambios v11:
+- Se eliminó la palabra "compatible" de los textos visibles.
+- Menú completo visible también con zoom alto.
+- En pantallas angostas/zoom alto el menú pasa a dos líneas y/o scroll horizontal, no desaparece.
+- Se unificó el menú en home y páginas internas:
+  Qué es, Cuándo sirve más, Beneficios, Quickstart, Comercios, Privacidad, Abrir Free.
+- Se mantuvieron páginas reales SEO:
+  /como-usarlo/, /para-comercios/, /privacidad/, /free/, /plus/.
 
 Subí el CONTENIDO de esta carpeta a la raíz del repo, no la carpeta contenedora.
