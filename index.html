@@ -46,56 +46,46 @@ body{
 }
 a{color:inherit;text-decoration:none}
 .container{width:min(1160px,calc(100% - 40px));margin:auto}
-.nav{
-  position:sticky;top:0;z-index:10;
-  background:rgba(4,10,17,.72);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--line);
-}
-.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(4,10,17,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.02em}
-.brand img{width:42px;height:42px;border-radius:12px}
 .brand span{font-size:1.05rem;line-height:1.05}
-.nav-links{display:flex;align-items:center;gap:20px;color:var(--muted);font-weight:650;font-size:.94rem}
+.nav-links{display:flex;align-items:center;gap:20px;color:var(--muted);font-weight:650;font-size:.94rem;white-space:nowrap}
 .nav-links a:hover{color:#fff}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:48px;padding:0 20px;border-radius:14px;
-  font-weight:850;letter-spacing:.01em;
-  background:linear-gradient(135deg,var(--violet),var(--blue));
-  color:#fff;box-shadow:0 14px 34px rgba(24,149,255,.26);
-  border:1px solid rgba(255,255,255,.18);
-}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:14px;font-weight:850;letter-spacing:.01em;background:linear-gradient(135deg,var(--violet),var(--blue));color:#fff;box-shadow:0 14px 34px rgba(24,149,255,.26);border:1px solid rgba(255,255,255,.18)}
 .btn.secondary{background:rgba(255,255,255,.08);box-shadow:none;color:#fff}
 .btn.small{min-height:40px;padding:0 14px;border-radius:12px;font-size:.9rem}
-.hero{padding:80px 0 56px}
-.hero-grid{display:grid;grid-template-columns:1.07fr .93fr;gap:44px;align-items:center}
+.hero{padding:74px 0 56px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);gap:44px;align-items:center}
 .kicker{color:var(--cyan);font-weight:850;text-transform:uppercase;letter-spacing:.13em;font-size:.8rem;margin-bottom:16px}
-h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-spacing:-.06em}
+h1{font-size:clamp(2.45rem,5.45vw,5.15rem);line-height:.96;margin:0 0 24px;letter-spacing:-.058em}
 .gradient{background:linear-gradient(135deg,#fff 10%,#46c4ff 45%,#765cff 88%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.55;color:var(--muted);margin:0 0 28px;max-width:740px}
-.statement{display:inline-flex;align-items:center;gap:10px;margin:0 0 6px;padding:10px 14px;border:1px solid rgba(41,217,255,.28);border-radius:999px;background:rgba(41,217,255,.08);color:#eaf8ff;font-weight:850;letter-spacing:.01em}
+.lead{font-size:clamp(1.05rem,1.75vw,1.32rem);line-height:1.55;color:var(--muted);margin:0 0 18px;max-width:740px}
+.statement{display:inline-flex;align-items:center;gap:10px;margin:0 0 8px;padding:10px 14px;border:1px solid rgba(41,217,255,.28);border-radius:999px;background:rgba(41,217,255,.08);color:#eaf8ff;font-weight:850;letter-spacing:.01em;line-height:1.25}
 .ctas{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 22px}
 .micro{color:var(--muted2);font-size:.95rem;line-height:1.5}
 .hero-card{position:relative;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));box-shadow:var(--shadow);padding:22px;overflow:hidden}
 .hero-card:before{content:"";position:absolute;inset:-60px -60px auto auto;width:200px;height:200px;background:radial-gradient(circle,rgba(66,255,115,.28),transparent 62%)}
 .mock{border:1px solid rgba(255,255,255,.18);border-radius:22px;background:#07121f;padding:16px;position:relative;z-index:1}
 .mock-top{display:flex;align-items:center;gap:8px;margin-bottom:14px;color:var(--muted2);font-size:.8rem}.dot{width:9px;height:9px;border-radius:50%;background:#6b7a8c}.dot:nth-child(1){background:#ff5e67}.dot:nth-child(2){background:#ffd166}.dot:nth-child(3){background:#42ff73}
-.mock-logo{display:flex;align-items:center;gap:14px;margin:8px 0 20px}.mock-logo img{width:64px;height:64px}.mock-logo strong{font-size:2.2rem;line-height:.9}.mock-search{height:52px;border:1px solid rgba(255,255,255,.2);border-radius:13px;display:flex;align-items:center;padding:0 16px;color:var(--muted);background:rgba(255,255,255,.04);margin-bottom:16px}
+.mock-logo{display:flex;align-items:center;gap:14px;margin:8px 0 20px}.mock-logo strong{font-size:2.2rem;line-height:.9}.mock-search{min-height:52px;border:1px solid rgba(255,255,255,.2);border-radius:13px;display:flex;align-items:center;padding:0 16px;color:var(--muted);background:rgba(255,255,255,.04);margin-bottom:16px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.tile{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;min-height:72px;padding:12px;display:flex;flex-direction:column;justify-content:space-between}.tile b{font-size:.9rem}.tile span{color:var(--muted2);font-size:.75rem}
 .section{padding:64px 0;border-top:1px solid rgba(255,255,255,.08)}
-.section h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;margin:0 0 16px;letter-spacing:-.04em}.section p.sub{color:var(--muted);font-size:1.12rem;line-height:1.6;max-width:760px;margin:0 0 30px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card2);border:1px solid var(--line);border-radius:22px;padding:24px;min-height:210px}.card .icon{font-size:1.7rem;margin-bottom:14px}.card h3{margin:0 0 10px;font-size:1.2rem}.card p{margin:0;color:var(--muted);line-height:1.55}.card strong{color:#fff}
-.compare{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.panel{background:var(--card2);border:1px solid var(--line);border-radius:24px;padding:26px}.panel h3{margin:0 0 16px}.checklist{display:grid;gap:12px;margin:0;padding:0;list-style:none}.checklist li{color:var(--muted);line-height:1.45;display:flex;gap:10px}.checklist li:before{content:"✓";color:var(--green);font-weight:900}.checklist.no li:before{content:"×";color:#ff6b7a}
-.steps{counter-reset:steps;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.step{counter-increment:steps;background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:20px}.step:before{content:counter(steps);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--blue));font-weight:900;margin-bottom:12px}.step h3{margin:0 0 8px;font-size:1rem}.step p{margin:0;color:var(--muted);line-height:1.45;font-size:.95rem}
-.keyword-box{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.tag{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);padding:9px 13px;color:var(--muted);font-weight:650;font-size:.9rem}
+.section h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.06;margin:0 0 16px;letter-spacing:-.04em}.section p.sub{color:var(--muted);font-size:1.12rem;line-height:1.6;max-width:860px;margin:0 0 30px}
+.intro-panel{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:26px;padding:30px;max-width:980px;box-shadow:0 18px 55px rgba(0,0,0,.18)}
+.intro-panel p{color:var(--muted);font-size:1.12rem;line-height:1.65;margin:0 0 16px}.intro-panel p:last-child{margin-bottom:0}.intro-panel strong{color:#fff}
+.critical{background:linear-gradient(135deg,rgba(139,92,255,.14),rgba(24,149,255,.11));border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:34px;box-shadow:var(--shadow)}
+.critical h2{margin-bottom:14px}.critical p{color:var(--muted);font-size:1.12rem;line-height:1.62;max-width:940px}.critical-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}.critical-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:20px;padding:20px;min-height:160px}.critical-card .icon{font-size:1.7rem;margin-bottom:12px}.critical-card h3{margin:0 0 8px}.critical-card p{font-size:.98rem;line-height:1.5;margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}.card{background:var(--card2);border:1px solid var(--line);border-radius:22px;padding:24px;min-height:0;display:flex;flex-direction:column}.card .icon{font-size:1.7rem;margin-bottom:14px}.card h3{margin:0 0 10px;font-size:1.2rem}.card p{margin:0;color:var(--muted);line-height:1.55}.card strong{color:#fff}
+.steps{counter-reset:steps;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.step{counter-increment:steps;background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:20px;min-height:0}.step:before{content:counter(steps);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--blue));font-weight:900;margin-bottom:12px}.step h3{margin:0 0 8px;font-size:1rem}.step p{margin:0;color:var(--muted);line-height:1.45;font-size:.95rem}
 .cta-band{background:linear-gradient(135deg,rgba(139,92,255,.28),rgba(24,149,255,.24));border:1px solid rgba(255,255,255,.2);border-radius:28px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:22px;box-shadow:var(--shadow)}.cta-band h2{margin:0 0 8px;font-size:clamp(1.8rem,3vw,2.7rem)}.cta-band p{margin:0;color:var(--muted);line-height:1.5}
 .footer{border-top:1px solid var(--line);padding:38px 0;color:var(--muted2)}.footer-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer a{color:var(--muted)}
 .page-hero{padding:58px 0 34px}.content{max-width:900px}.content h1{font-size:clamp(2.3rem,5vw,4.7rem)}.content h2{font-size:1.8rem;margin-top:36px}.content p,.content li{color:var(--muted);line-height:1.7;font-size:1.06rem}.content ul{padding-left:22px}.notice{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:20px;padding:20px;margin:24px 0}.table{display:grid;gap:12px}.row{display:grid;grid-template-columns:220px 1fr;gap:14px;border-bottom:1px solid var(--line);padding:12px 0}.row strong{color:#fff}.row span{color:var(--muted)}
-@media(max-width:900px){.hero-grid,.cards,.compare{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.nav-links{display:none}.hero{padding-top:46px}.cta-band{display:block}.cta-band .btn{margin-top:20px}.tiles{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.container{width:min(100% - 28px,1160px)}.nav-inner{height:64px}.brand span{font-size:.92rem}.hero{padding:36px 0}.hero-card{padding:12px;border-radius:22px}.mock-logo strong{font-size:1.6rem}.mock-logo img{width:52px;height:52px}.steps{grid-template-columns:1fr}.cards{gap:12px}.card{min-height:unset}.row{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}.section{padding:46px 0}}
-
-.logo-mark{width:42px;height:42px;border-radius:14px;display:inline-block;flex:0 0 auto;background:radial-gradient(circle at 68% 35%,#31d8ff 0 11%,transparent 12%),conic-gradient(from 210deg,#04111f,#0a2d60,#23d7ff,#204cff,#06111d,#04111f);box-shadow:inset 13px 0 14px rgba(0,0,0,.72),0 0 24px rgba(35,150,255,.28);position:relative}.logo-mark:after{content:"";position:absolute;inset:11px 13px;border-radius:50%;background:#06111d;box-shadow:inset -4px 0 9px rgba(0,0,0,.55)}.mock-logo .logo-mark{width:64px;height:64px;border-radius:18px}.mock-logo .logo-mark:after{inset:16px 20px}@media(max-width:560px){.brand .logo-mark{width:38px;height:38px}.brand .logo-mark:after{inset:10px 12px}.mock-logo .logo-mark{width:52px;height:52px}.mock-logo .logo-mark:after{inset:13px 16px}}
+.logo-mark{width:42px;height:42px;border-radius:14px;display:inline-block;flex:0 0 auto;background:radial-gradient(circle at 68% 35%,#31d8ff 0 11%,transparent 12%),conic-gradient(from 210deg,#04111f,#0a2d60,#23d7ff,#204cff,#06111d,#04111f);box-shadow:inset 13px 0 14px rgba(0,0,0,.72),0 0 24px rgba(35,150,255,.28);position:relative}.logo-mark:after{content:"";position:absolute;inset:11px 13px;border-radius:50%;background:#06111d;box-shadow:inset -4px 0 9px rgba(0,0,0,.55)}.mock-logo .logo-mark{width:64px;height:64px;border-radius:18px}.mock-logo .logo-mark:after{inset:16px 20px}
+.seo-hidden{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+@media(max-width:1050px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:720px}.critical-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.nav-links{display:none}.hero{padding-top:46px}.cta-band{display:block}.cta-band .btn{margin-top:20px}.tiles{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:650px){.container{width:min(100% - 28px,1160px)}.nav-inner{min-height:64px}.brand span{font-size:.92rem}.hero{padding:36px 0 42px}h1{font-size:clamp(2.4rem,13vw,3.7rem)}.lead{font-size:1.05rem}.statement{display:block;border-radius:16px}.hero-card{padding:12px;border-radius:22px}.mock-logo strong{font-size:1.6rem}.mock-logo .logo-mark{width:52px;height:52px}.mock-logo .logo-mark:after{inset:13px 16px}.mock-top span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tiles{grid-template-columns:repeat(2,1fr)}.section{padding:46px 0}.cards,.critical-grid,.steps{grid-template-columns:1fr}.critical{padding:24px}.critical-card,.card,.step{padding:20px}.intro-panel{padding:22px}.cta-band{padding:24px}.row{grid-template-columns:1fr}}
 
   </style>
   <script type="application/ld+json">
@@ -115,11 +105,12 @@ h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-sp
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="./" aria-label="Punto Smart OS">
-        <img class="logo-mark" aria-hidden="true">
+        <span class="logo-mark" aria-hidden="true"></span>
         <span>PUNTO<br>SMART OS</span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#que-es">Qué es</a>
+        <a href="#continuidad">Continuidad</a>
         <a href="#beneficios">Beneficios</a>
         <a href="como-usarlo/">Quickstart</a>
         <a href="para-comercios/">Comercios</a>
@@ -135,6 +126,7 @@ h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-sp
           <div class="kicker">Punto Smart OS</div>
           <h1>Sistema operativo <span class="gradient">rápido, versátil y portátil.</span></h1>
           <p class="lead">Tu entorno digital siempre disponible, desde cualquier navegador compatible, sin instalar nada.</p>
+          <p class="statement">Estamos cambiando la manera de usar internet.</p>
           <div class="ctas">
             <a class="btn" href="free/">Abrir versión Free</a>
             <a class="btn secondary" href="como-usarlo/">Ver cómo funciona</a>
@@ -164,27 +156,26 @@ h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-sp
     <section id="que-es" class="section">
       <div class="container">
         <h2>Primero tu entorno. Después internet.</h2>
-        <p class="sub">La mayoría entra a internet desde el caos: pestañas, favoritos escondidos, apps sueltas, buscadores, feeds y accesos perdidos. Punto Smart OS propone una entrada distinta: abrir tu propio entorno y operar desde ahí.</p>
-        <div class="compare">
-          <div class="panel">
-            <h3>Lo que no es</h3>
-            <ul class="checklist no">
-              <li>No es una PC remota en la nube.</li>
-              <li>No es un escritorio virtual corporativo.</li>
-              <li>No es una app pesada que tenés que instalar.</li>
-              <li>No es solo una lista de favoritos.</li>
-              <li>No necesita que dejes tu computadora encendida.</li>
-            </ul>
-          </div>
-          <div class="panel">
-            <h3>Lo que sí es</h3>
-            <ul class="checklist">
-              <li>Un sistema operativo rápido, versátil y portátil para usar internet de forma ordenada.</li>
-              <li>Una interfaz visual para ordenar accesos y herramientas.</li>
-              <li>Una forma simple de usar internet desde cualquier navegador compatible.</li>
-              <li>Una base editable para comercios, oficinas, vendedores y uso personal.</li>
-              <li>Una puerta de entrada rápida a tus webs, apps web y búsquedas.</li>
-            </ul>
+        <p class="sub">Punto Smart OS es una forma simple de usar internet desde un entorno propio.</p>
+        <div class="intro-panel">
+          <p>Centraliza tus accesos, herramientas, búsquedas, apps web y páginas importantes en una sola interfaz visual, rápida y editable.</p>
+          <p>En vez de entrar al navegador y perderte entre pestañas, favoritos, feeds y buscadores, entrás primero a tu entorno y operás desde ahí.</p>
+          <p><strong>No reemplaza tu dispositivo:</strong> ordena tu forma de operar sobre cualquier navegador compatible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="continuidad" class="section">
+      <div class="container">
+        <div class="critical">
+          <h2>Cuando perdés el dispositivo, no perdés tu entorno.</h2>
+          <p>Punto Smart OS marca la diferencia cuando perdés acceso a tu equipo principal: robo, pérdida, rotura, cambio de celular, notebook dañada, viaje o necesidad de usar una computadora o teléfono prestado.</p>
+          <p>Abrís la web desde otro dispositivo compatible y seguís operando sin instalar programas, sin modificar el sistema operativo de terceros y sin reconstruir tus accesos desde cero.</p>
+          <div class="critical-grid">
+            <article class="critical-card"><div class="icon">📱</div><h3>Robo o pérdida</h3><p>Si perdés el celular o la notebook, tu forma de operar no queda atada al equipo perdido.</p></article>
+            <article class="critical-card"><div class="icon">🛠️</div><h3>Rotura del equipo</h3><p>Si se rompe la PC, tablet o teléfono, podés abrir tu entorno desde otro dispositivo.</p></article>
+            <article class="critical-card"><div class="icon">🤝</div><h3>Equipo prestado</h3><p>Usás una PC o celular de un tercero sin instalar nada ni tocar su sistema.</p></article>
+            <article class="critical-card"><div class="icon">☁️</div><h3>Plus con backup</h3><p>Con Plus, tu configuración queda guardada en Google Drive para recuperarla rápido.</p></article>
           </div>
         </div>
       </div>
@@ -199,6 +190,7 @@ h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-sp
           <article class="card"><div class="icon">🧭</div><h3>Internet ordenado</h3><p>Agrupá IA, bancos, trámites, redes, compras, videos, trabajo, proveedores, juegos, clima y dólar en una sola pantalla.</p></article>
           <article class="card"><div class="icon">🧩</div><h3>Editable</h3><p>Mové, borrá y agregá tus propios links. La base viene lista, pero lo importante es que se convierta en tu entorno.</p></article>
           <article class="card"><div class="icon">💻</div><h3>Para equipos básicos</h3><p>Está pensado como web liviana. Sirve para notebooks viejas, PCs básicas, celulares, tablets y dispositivos con navegador compatible.</p></article>
+          <article class="card"><div class="icon">🔁</div><h3>Continuidad operativa</h3><p>Si cambiás, perdés o rompés el equipo, no tenés que reconstruir todo desde cero.</p></article>
           <article class="card"><div class="icon">☁️</div><h3>Plus con nube</h3><p>La versión Plus permite guardar tu configuración en Google Drive y recuperarla desde otro dispositivo.</p></article>
           <article class="card"><div class="icon">🔐</div><h3>Sin negocio de datos</h3><p>Punto Smart OS no basa su negocio en recopilar, perfilar ni vender tus datos. Las apps externas conservan sus propias políticas.</p></article>
         </div>
@@ -230,15 +222,9 @@ h1{font-size:clamp(2.55rem,6vw,5.7rem);line-height:.95;margin:0 0 24px;letter-sp
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>También pensado para búsqueda</h2>
-        <p class="sub">Punto Smart OS se ubica en una categoría nueva entre página de inicio personalizada, launcher web, sistema operativo web y entorno digital portátil.</p>
-        <div class="keyword-box" aria-label="Temas relacionados">
-          <span class="tag">sistema operativo web</span><span class="tag">entorno operativo portátil</span><span class="tag">internet ordenado</span><span class="tag">accesos rápidos web</span><span class="tag">página de inicio personalizada</span><span class="tag">launcher web</span><span class="tag">organizar links</span><span class="tag">herramienta para comercios</span><span class="tag">entorno digital portátil</span>
-        </div>
-      </div>
-    </section>
+    <div class="seo-hidden" aria-hidden="true">
+      sistema operativo web, entorno operativo portátil, internet ordenado, accesos rápidos web, página de inicio personalizada, launcher web, organizar links, herramienta para comercios, entorno digital portátil.
+    </div>
   </main>
 
   <footer class="footer">
