@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url><loc>https://puntosmart.com.ar/</loc></url> <url><loc>https://puntosmart.com.ar/free/</loc></url> <url><loc>https://puntosmart.com.ar/plus/</loc></url> <url><loc>https://puntosmart.com.ar/como-usarlo/</loc></url> <url><loc>https://puntosmart.com.ar/para-comercios/</loc></url> <url><loc>https://puntosmart.com.ar/privacidad/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://puntosmart.com.ar/home/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://puntosmart.com.ar/home/como-usarlo/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://puntosmart.com.ar/home/para-comercios/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://puntosmart.com.ar/home/free/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://puntosmart.com.ar/home/plus/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://puntosmart.com.ar/home/privacidad/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
