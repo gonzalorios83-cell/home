@@ -1,12 +1,10 @@
-# Punto Smart OS institucional v12 ANTICACHE
+# Punto Smart OS institucional v13 NAV FIX
 
 Cambios:
-- Se eliminó "compatible" de todos los textos.
-- El CSS de la home está también inline para evitar caché del navegador/GitHub Pages.
-- Menú siempre visible con zoom alto; si no entra, pasa a scroll horizontal.
-- Se conserva estructura SEO completa.
+- Header/menú ya no queda sticky/fijo.
+- Se corrige el problema donde la barra del menú tapaba títulos y tarjetas al hacer zoom o al entrar a páginas internas.
+- Se eliminan restos de "compatible" y "compatibilidad".
+- Se conserva la estructura SEO completa: home, Free, Plus, Quickstart, Comercios, Privacidad, sitemap y robots.
 
-Después de subir:
-1. Esperar 1 minuto.
-2. Abrir con Ctrl + F5.
-3. O probar con ?v=12 al final de la URL.
+Subí el CONTENIDO de esta carpeta a /home/ en el repo, no la carpeta contenedora.
+Después probá con Ctrl + F5 o agregando ?v=13 a la URL.

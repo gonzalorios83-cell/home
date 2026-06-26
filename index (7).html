@@ -574,6 +574,39 @@ smartSearchForm?.addEventListener('submit', e => {
 });
 setSmartSearchEngine('google');
 
+function initPlusAbTest(){
+  const btn = document.getElementById('plusSalesBtn');
+  const dialog = document.getElementById('plusSalesDialog');
+  const close = document.getElementById('closePlusSalesBtn');
+  if(!btn || !dialog) return;
+  const variants = {
+    A: 'Hacé click y conocé las ventajas de la versión Plus.',
+    B: 'Hacé click para conocer las ventajas de la versión Plus.'
+  };
+  let variant = localStorage.getItem('ps_plus_cta_variant');
+  if(!variant || !variants[variant]){
+    variant = Math.random() < 0.5 ? 'A' : 'B';
+    localStorage.setItem('ps_plus_cta_variant', variant);
+  }
+  const visible = document.getElementById('plusCtaShort');
+  const modal = document.getElementById('plusAbText');
+  if(visible) visible.textContent = variants[variant];
+  if(modal) modal.textContent = variants[variant];
+  const wa = document.getElementById('plusWhatsappBtn');
+  if(wa){
+    const msg = `Hola, quiero contratar Punto Smart OS Plus. Vengo desde la versión ${variant}.`;
+    wa.href = 'https://wa.me/5491159468220?text=' + encodeURIComponent(msg);
+  }
+  btn.onclick = () => {
+    try{
+      const key = 'ps_plus_cta_click_' + variant;
+      localStorage.setItem(key, String((Number(localStorage.getItem(key) || '0') + 1)));
+    }catch(e){}
+    dialog.showModal();
+  };
+  close && (close.onclick = () => dialog.close());
+}
+
 function tick(){
   const now = new Date();
   clock.textContent = now.toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'});
@@ -581,4 +614,5 @@ function tick(){
 }
 restoreGroupsState();
 initDailyPhrase();
+initPlusAbTest();
 setInterval(tick,1000); tick(); renderAll();
