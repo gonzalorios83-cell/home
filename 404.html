@@ -7,16 +7,60 @@
   <title>Punto Smart OS | Escritorio digital en la nube</title>
   <meta name="description" content="Ordená accesos, búsquedas, herramientas, trámites, IA y sitios frecuentes en una pantalla rápida, simple y editable." />
   <link rel="canonical" href="https://puntosmart.com.ar/home/" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Punto Smart OS | Escritorio digital en la nube" />
   <meta property="og:description" content="Ordená accesos, búsquedas, herramientas, trámites, IA y sitios frecuentes en una pantalla rápida, simple y editable." />
   <meta property="og:url" content="https://puntosmart.com.ar/home/" />
   <meta name="twitter:card" content="summary" />
-  <link rel="stylesheet" href="/assets/style.css?v=14.2" />
+  <style>
+/* Punto Smart OS v14.3 inline CSS fix */
+
+:root{
+  --bg:#020713;
+  --bg2:#071225;
+  --panel:rgba(12,24,48,.78);
+  --panel2:rgba(14,31,62,.92);
+  --line:rgba(134,171,255,.18);
+  --line2:rgba(134,171,255,.32);
+  --text:#eef5ff;
+  --muted:#9fb0ca;
+  --soft:#d8e7ff;
+  --accent:#5fd0ff;
+  --accent2:#8b5cff;
+  --ok:#54f3b1;
+  --warn:#ffd166;
+  --shadow:0 24px 80px rgba(0,0,0,.38);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;min-height:100vh;font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;color:var(--text);background:
+  radial-gradient(circle at 10% 0%, rgba(95,208,255,.22), transparent 28%),
+  radial-gradient(circle at 90% 12%, rgba(139,92,255,.20), transparent 30%),
+  linear-gradient(180deg,#020713 0%,#071225 45%,#020713 100%);}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.app-shell{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:18px 0 28px}
+.topbar{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;margin-bottom:18px;border:1px solid var(--line);background:rgba(2,7,19,.72);backdrop-filter:blur(16px);border-radius:24px;box-shadow:var(--shadow)}
+.brand{display:flex;align-items:center;gap:12px;min-width:max-content}
+.brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 30px rgba(95,208,255,.35);position:relative}
+.brand-mark:after{content:"";position:absolute;inset:9px;border:2px solid rgba(255,255,255,.72);border-radius:9px}
+.brand-text{display:grid;line-height:1}.brand-text span{font-size:11px;letter-spacing:.28em;color:var(--muted)}.brand-text strong{font-size:19px;letter-spacing:.03em}
+.main-nav{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.main-nav a{font-size:13px;color:var(--soft);padding:8px 10px;border:1px solid transparent;border-radius:999px}.main-nav a:hover,.main-nav a.active{border-color:var(--line2);background:rgba(255,255,255,.06)}
+.status-zone{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.status-pill{display:flex;align-items:center;gap:7px;min-height:38px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.055)}.status-pill b{font-size:13px}.status-pill small{display:block;color:var(--muted);font-size:10px}.gear{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.06);color:var(--text);cursor:pointer}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:18px;align-items:stretch;margin-bottom:18px}.hero-card,.os-card,.panel,.text-card,.price-card{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(13,27,56,.86),rgba(7,18,37,.72));box-shadow:var(--shadow)}.hero-card{padding:32px}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line2);border-radius:999px;padding:7px 10px;background:rgba(95,208,255,.08);margin-bottom:18px}.hero h1{font-size:clamp(38px,6vw,72px);line-height:.96;margin:0 0 18px;letter-spacing:-.06em}.hero p{font-size:18px;line-height:1.55;color:var(--soft);max-width:670px;margin:0 0 18px}.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 16px;border-radius:14px;border:1px solid var(--line2);background:rgba(255,255,255,.06);color:var(--text);font-weight:800;cursor:pointer}.btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04101f}.btn:hover{transform:translateY(-1px)}
+.quick-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.proof{padding:12px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.045)}.proof b{display:block;font-size:15px}.proof small{display:block;margin-top:5px;color:var(--muted);line-height:1.35}
+.os-card{padding:18px;display:flex;flex-direction:column;gap:12px}.smart-search{padding:14px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.05)}.smart-search-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}.badge{font-size:12px;font-weight:900;color:#06111d;background:var(--accent);padding:6px 9px;border-radius:999px;white-space:nowrap}.smart-search-head small{font-size:12px;color:var(--muted);line-height:1.35}.smart-search-box{display:flex;gap:8px;align-items:center;border:1px solid var(--line2);border-radius:16px;padding:8px;background:rgba(0,0,0,.18)}.smart-search-box input{flex:1;border:0;outline:0;background:transparent;color:var(--text);min-width:0}.smart-search-box button{border:0;border-radius:12px;padding:9px 12px;background:var(--accent);color:#06111d;font-weight:900;cursor:pointer}.engines{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.engine{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:var(--soft);font-size:12px;padding:7px 9px;cursor:pointer}.engine.active{background:rgba(95,208,255,.14);border-color:var(--accent);color:var(--text)}
+.mini-desktop{display:grid;gap:10px}.desktop-section{padding:14px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04)}.desktop-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}.desktop-title b{font-size:14px}.desktop-title small{color:var(--muted);font-size:12px}.tile-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.tile{min-height:74px;padding:10px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.055);display:flex;flex-direction:column;justify-content:center;gap:5px;transition:.18s ease}.tile:hover{border-color:var(--accent);background:rgba(95,208,255,.10);transform:translateY(-1px)}.tile span{font-weight:900;font-size:13px}.tile small{font-size:11px;color:var(--muted);line-height:1.2}.ad-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid rgba(95,208,255,.36);border-radius:20px;padding:14px 16px;background:linear-gradient(135deg,rgba(95,208,255,.16),rgba(139,92,255,.10));box-shadow:var(--shadow)}.ad-copy b{display:block}.ad-copy small{color:var(--muted)}.ad-cta{font-weight:900;color:#06111d;background:var(--warn);padding:9px 12px;border-radius:999px;white-space:nowrap;font-size:12px}
+.section{margin:18px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:0 2px 12px}.section h2{font-size:30px;letter-spacing:-.04em;margin:0}.section-head p{margin:0;color:var(--muted);line-height:1.45;max-width:640px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cards.two{grid-template-columns:repeat(2,1fr)}.cards.four{grid-template-columns:repeat(4,1fr)}.text-card,.panel{padding:20px}.text-card h3,.panel h3,.price-card h3{margin:0 0 9px;font-size:20px;letter-spacing:-.02em}.text-card p,.panel p,.price-card p{margin:0;color:var(--muted);line-height:1.55}.text-card ul,.panel ul,.price-card ul{margin:14px 0 0;padding-left:18px;color:var(--soft);line-height:1.55}.text-card li+li,.panel li+li,.price-card li+li{margin-top:6px}.wide-panel{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.045);display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.wide-panel p{color:var(--muted);line-height:1.55}.page-hero{padding:36px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(13,27,56,.86),rgba(7,18,37,.72));box-shadow:var(--shadow);margin-bottom:18px}.page-hero h1{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 12px;letter-spacing:-.05em}.page-hero p{font-size:18px;line-height:1.55;color:var(--soft);max-width:850px;margin:0}.steps{counter-reset:step;display:grid;gap:12px}.step{counter-increment:step;display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.045)}.step:before{content:counter(step);width:42px;height:42px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#06111d;background:linear-gradient(135deg,var(--accent),var(--accent2))}.step h3{margin:0 0 6px}.step p{margin:0;color:var(--muted);line-height:1.55}.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.price-card{padding:24px}.price-card.featured{border-color:rgba(95,208,255,.55);background:linear-gradient(180deg,rgba(18,39,78,.94),rgba(7,18,37,.76))}.price-tag{font-size:28px;font-weight:950;letter-spacing:-.04em;margin:8px 0 2px}.footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:22px;padding:16px;border:1px solid var(--line);border-radius:22px;background:rgba(2,7,19,.72);color:var(--muted)}.footer b{color:var(--text)}.footer small{display:block}.footer-links{display:flex;gap:10px;flex-wrap:wrap}.footer a{color:var(--soft);font-size:13px}.note{font-size:13px;color:var(--muted);line-height:1.5}.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}.skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:var(--accent);color:#06111d;padding:10px;border-radius:10px;z-index:10}
+@media (max-width:900px){.topbar{align-items:flex-start;flex-direction:column}.main-nav{justify-content:flex-start}.hero{grid-template-columns:1fr}.cards,.cards.two,.cards.four,.price-grid{grid-template-columns:1fr}.wide-panel{grid-template-columns:1fr}.quick-proof{grid-template-columns:1fr}.tile-grid{grid-template-columns:repeat(2,1fr)}.hide-small{display:none}.hero-card{padding:24px}.page-hero{padding:26px}.section-head{display:block}.section-head p{margin-top:8px}.ad-banner{align-items:flex-start;flex-direction:column}.ad-cta{align-self:flex-start}}
+@media (max-width:460px){.app-shell{width:min(100% - 18px,1180px)}.main-nav a{font-size:12px;padding:7px 8px}.hero h1{font-size:38px}.smart-search-box{align-items:stretch;flex-direction:column}.smart-search-box button{width:100%}.tile-grid{grid-template-columns:1fr}.status-zone{width:100%;justify-content:space-between}.status-pill{flex:1}.gear{flex:0 0 38px}}
+
+  </style>
   <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Punto Smart OS", "applicationCategory": "ProductivityApplication", "operatingSystem": "Web", "url": "https://puntosmart.com.ar/home/", "description": "Escritorio digital para ordenar accesos, búsquedas, herramientas, trámites y sitios frecuentes desde el navegador.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "ARS"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "Punto Smart", "url": "https://puntosmart.com.ar"}]</script>
 </head>
 <body>
@@ -119,6 +163,45 @@
       <span>© 2026 Punto Smart OS</span>
     </footer>
   </div>
-  <script src="/assets/main.js?v=14.2"></script>
+  <script>
+// Punto Smart OS v14.3 inline JS fix
+
+const engines = {
+  web: q => `https://www.google.com/search?q=${encodeURIComponent(q)}`,
+  ia: q => `https://chat.openai.com/?q=${encodeURIComponent(q)}`,
+  videos: q => `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`,
+  comprar: q => `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(q)}`,
+  comparar: q => `https://www.google.com/search?q=${encodeURIComponent(q + ' comparativa opiniones')}`,
+  tramites: q => `https://www.google.com/search?q=${encodeURIComponent(q + ' trámite Argentina')}`
+};
+let activeEngine = 'web';
+document.querySelectorAll('[data-engine]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-engine]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeEngine = btn.dataset.engine;
+  });
+});
+const form = document.querySelector('#smartSearchForm');
+if(form){
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const input = document.querySelector('#searchInput');
+    const q = (input?.value || '').trim();
+    if(!q) return;
+    const fn = engines[activeEngine] || engines.web;
+    window.open(fn(q), '_blank', 'noopener');
+  });
+}
+const clock = document.querySelector('#clock');
+const dateText = document.querySelector('#dateText');
+function tick(){
+  const d = new Date();
+  if(clock) clock.textContent = d.toLocaleTimeString('es-AR', {hour:'2-digit', minute:'2-digit'});
+  if(dateText) dateText.textContent = d.toLocaleDateString('es-AR', {weekday:'short', day:'2-digit', month:'short'});
+}
+tick(); setInterval(tick, 30000);
+
+  </script>
 </body>
 </html>
